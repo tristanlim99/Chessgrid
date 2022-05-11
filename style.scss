@@ -1,0 +1,86 @@
+$black : black;
+$maple : #672f30;
+$wood : #8C7D6E;
+$bisque: bisque;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+        background-image: url(https://cdn.wallpapersafari.com/92/19/jCFbYv.jpg);
+    }
+header{
+    width: MIN(100vh 100vw);
+    height: MIN(100vh 100vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6%;
+    color: $bisque;
+    font-family: 'Water Brush', cursive;
+    font-size: 25px;
+}
+.board{
+    width: MIN(60vh, 60vw);
+  
+    background-color: yellowgreen;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    border: 10px solid $black;
+}
+
+.box1:nth-child(even) {
+    background-color: $maple;
+}
+.box1:nth-child(odd){
+    background-color: $bisque;
+}
+.box2:nth-child(even){
+    background-color: $bisque;
+}
+.box2:nth-child(odd){
+    background-color: $maple;
+}
+
+.box1{display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;}
+    .box2{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    }
+    .box11{display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;}
+
+        .box12{
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        }
+        
+        .box11:nth-child(even) {
+            background-color: $maple;
+            color: $maple ;
+        }
+        .box11:nth-child(odd){
+            background-color: $bisque;
+            color: $bisque;
+        }
+        .box12:nth-child(even){
+            background-color: $bisque;
+            color: $bisque;
+        }
+        .box12:nth-child(odd){
+            background-color: $maple;
+            color: $maple;
+        }

@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(https://cdn.wallpapersafari.com/92/19/jCFbYv.jpg);
+}
+
+header {
+  width: MIN(100vh 100vw);
+  height: MIN(100vh 100vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 6%;
+  color: bisque;
+  font-family: 'Water Brush', cursive;
+  font-size: 25px;
+}
+
+.board {
+  width: MIN(60vh, 60vw);
+  background-color: yellowgreen;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  border: 10px solid black;
+}
+
+.box1:nth-child(even) {
+  background-color: #672f30;
+}
+
+.box1:nth-child(odd) {
+  background-color: bisque;
+}
+
+.box2:nth-child(even) {
+  background-color: bisque;
+}
+
+.box2:nth-child(odd) {
+  background-color: #672f30;
+}
+
+.box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+}
+
+.box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+}
+
+.box11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+}
+
+.box12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+}
+
+.box11:nth-child(even) {
+  background-color: #672f30;
+  color: #672f30;
+}
+
+.box11:nth-child(odd) {
+  background-color: bisque;
+  color: bisque;
+}
+
+.box12:nth-child(even) {
+  background-color: bisque;
+  color: bisque;
+}
+
+.box12:nth-child(odd) {
+  background-color: #672f30;
+  color: #672f30;
+}
+/*# sourceMappingURL=style.css.map */
