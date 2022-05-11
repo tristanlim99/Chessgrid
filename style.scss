@@ -8,6 +8,10 @@ $bisque: bisque;
     padding: 0;
 }
 body{
+    margin: 0; 
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
         background-image: url(https://cdn.wallpapersafari.com/92/19/jCFbYv.jpg);
     }
 header{
@@ -23,7 +27,7 @@ header{
 }
 .board{
     width: MIN(60vh, 60vw);
-  
+    height: MIN(60vh 60vw);
     background-color: yellowgreen;
     margin-left: auto;
     margin-right: auto;
@@ -84,3 +88,20 @@ header{
             background-color: $maple;
             color: $maple;
         }
+
+        .move-box2{
+            background-color: $maple;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        }
+        .move1-box11{
+            background-color: $bisque;
+            transition: transform 1s linear;
+        }
+        .move-box2:hover .move1-box11{
+         transform: translateX(100%);
+        }
+        
+        
