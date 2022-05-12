@@ -15,26 +15,24 @@ body{
         background-image: url(https://cdn.wallpapersafari.com/92/19/jCFbYv.jpg);
     }
 header{
-    width: MIN(100vh 100vw);
-    height: MIN(100vh 100vw);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 6%;
+    padding: 3%;
     color: $bisque;
     font-family: 'Water Brush', cursive;
     font-size: 25px;
 }
 .board{
-    width: MIN(60vh, 60vw);
-    height: MIN(60vh 60vw);
-    background-color: yellowgreen;
+    width:480px;
+    height: 480px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: auto;
+    border: 10px solid black;
 
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    border: 10px solid $black;
 }
 
 .box1:nth-child(even) {
@@ -89,19 +87,41 @@ header{
             color: $maple;
         }
 
-        .move-box2{
-            background-color: $maple;
-            display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 50px;
+        .move1{
+            transition: 2s;
         }
-        .move1-box11{
-            background-color: $bisque;
-            transition: transform 1s linear;
+        .move2{
+            transition: 2s 1s;
         }
-        .move-box2:hover .move1-box11{
-         transform: translateX(100%);
+        .move3{
+            transition: 2s 2.5s;
         }
-        
+        .move4{
+         transition: 1s 1s;
+        }
+        .board:hover .move1{
+            transform: translateY(100%);
+        }
+        .board:hover .move2{
+            transform: translateY(-200%);
+        }
+        .board:hover .move3{
+            transform: translateY(200%);
+        }
+        .board:hover .move4{
+            animation: queen 3s infinite 4s;
+        }
+        @keyframes queen{
+            0%{
+               
+            }
+            33%{
+                transform: translateY(-400%) translateX(800%);
+            }
+            100%{
+               transform: translateY(-700%) translateX(200%);
+            }
+        }
+    
+    
         
