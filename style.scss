@@ -99,6 +99,9 @@ header{
         .move4{
          transition: 1s 1s;
         }
+        .gameover{
+            transition: 3s 3s;
+           }
         .board:hover .move1{
             transform: translateY(100%);
         }
@@ -111,10 +114,13 @@ header{
         .board:hover .move4{
             animation: queen 3s infinite 4s;
         }
+        .board:hover .gameover{
+            transform: rotateX(100%);
+            color: $bisque;
+        }
+        
         @keyframes queen{
-            0%{
-               
-            }
+            
             33%{
                 transform: translateY(-400%) translateX(800%);
             }

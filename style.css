@@ -148,6 +148,11 @@ header {
   transition: 1s 1s;
 }
 
+.gameover {
+  -webkit-transition: 3s 3s;
+  transition: 3s 3s;
+}
+
 .board:hover .move1 {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -168,9 +173,13 @@ header {
           animation: queen 3s infinite 4s;
 }
 
+.board:hover .gameover {
+  -webkit-transform: rotateX(100%);
+          transform: rotateX(100%);
+  color: bisque;
+}
+
 @-webkit-keyframes queen {
-  0% {
-  }
   33% {
     -webkit-transform: translateY(-400%) translateX(800%);
             transform: translateY(-400%) translateX(800%);
@@ -182,8 +191,6 @@ header {
 }
 
 @keyframes queen {
-  0% {
-  }
   33% {
     -webkit-transform: translateY(-400%) translateX(800%);
             transform: translateY(-400%) translateX(800%);
